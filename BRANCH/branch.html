@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Branches | True Church of God of Cameroon</title>
+
+    <link rel="stylesheet" href="branches.css">
+
+    <link rel="stylesheet"
+          href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+</head>
+<body>
+
+    <header>
+        <h1>Our Church Branches</h1>
+        <p>Find the branch nearest to you</p>
+    </header>
+
+    <section class="map-section">
+        <div id="map"></div>
+    </section>
+
+    <section class="branches-container">
+
+        <div class="branch-card">
+            <h2>Douala Branch</h2>
+            <p>Douala, Cameroon</p>
+            <p>Sunday Service: 9:00 AM</p>
+        </div>
+        <div class="branch-card">
+            <h2>Yaoundé Branch</h2>
+            <p>Yaoundé, Cameroon</p>
+            <p>Sunday Service: 10:00 AM</p>
+        </div>
+
+        <div class="branch-card">
+            <h2>Bafoussam Branch</h2>
+            <p>Bafoussam, Cameroon</p>
+            <p>Sunday Service: 9:30 AM</p>
+            <p>: 9:30 AM</p>
+        </div>
+
+    </section>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <script>
+        // Create map
+        var map = L.map('').setView([4.0511, 9.7679], 7);
+
+        // Map tiles
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19
+        }).addTo(map);
+
+        // Branch locations
+
+        L.marker([4.0511, 9.7679])
+            .addTo(map)
+            .bindPopup("<b>Douala Branch</b>");
+
+        L.marker([3.8480, 11.5021])
+            .addTo(map)
+            .bindPopup("<b>Yaoundé Branch</b>");
+
+        L.marker([5.4781, 10.4170])
+            .addTo(map)
+            .bindPopup("<b>Bafoussam Branch</b>");
+    </script>
+
+</body>
+</html>

@@ -10,7 +10,6 @@ body{
     color:#111010;
 }
 
-/* Navigation */
 
 .navbar{
     background:#0A3D91;
@@ -62,15 +61,13 @@ body{
     opacity:0.9;
 }
 
-/* Hero */
-
 .hero{
     height:90vh;
     background:linear-gradient(
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     ),
-    url('CHURCH\ PIC.png');
+    url('download\ -\ Copy.jpg');
 
     background-size:cover;
     background-position:center;
@@ -81,6 +78,7 @@ body{
     text-align:center;
     color:white;
 }
+
 
 .hero-content h1{
     font-size:50px;
@@ -101,7 +99,6 @@ body{
     margin-left:10px;
 }
 
-/* Search Section */
 
 .search-section{
     padding:60px 10%;
@@ -125,7 +122,6 @@ body{
     cursor:pointer;
 }
 
-/* Welcome */
 
 .welcome{
     background:white;
@@ -137,7 +133,6 @@ body{
     margin-bottom:20px;
 }
 
-/* Branches */
 
 .branches{
     padding:60px 10%;
@@ -169,7 +164,6 @@ body{
     border-radius:5px;
 }
 
-/* Events */
 
 .events{
     background:#b8b7b7;
@@ -184,14 +178,12 @@ body{
     border-radius:10px;
 }
 
-/* Contact */
 
 .contact{
     padding:60px 10%;
     text-align:center;
 }
 
-/* Footer */
 
 footer{
     background:#0A3D91;
